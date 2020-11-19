@@ -14,6 +14,10 @@
 		: 페이지가 처음 브라우저에 로딩된 초기 줌 레벨을 지정한다.
 		즉 초기확대값을 설정하게 된다.
  -->
+
+ <!-- 
+	부트스트랩 사이트 : https://www.w3schools.com/
+  -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>B02Typography.html</title>
 <link rel="stylesheet"
