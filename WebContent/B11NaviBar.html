@@ -1,110 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B11NaviBar.html</title>
-    <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B11NaviBar.html</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
+  <!-- 
+    fixed-top
+        : 네비바를 페이지 상단에 고정시켜 스크롤해도
+        움직이지 않도록 설정한다. 
+ -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
 
-    
-      </nav>
-    <!-- 
-        fixed-top
-            : 네비바를 페이지 상단에 고정시켜 스크롤해도
-            움직이지 않도록 설정한다.
-     -->
-    <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="./images/bird.jpg" alt="Logo" style="width:40px;">
+    <a class="navbar-brand" href="#">
+      <img src="./images/bird.jpg" alt="Logo" style="width:40px;">
+    </a>
+
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">활성화링크</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link1</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link2(드롭다운)</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">비활성화링크</a>
+      </li>
+    </ul>
+
+    <form class="form-inline" action="/action_page.php">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+  </nav>
+  <div class="container">
+
+    <h2>아코디언 구현하기</h2>
+    <div id="accordion">
+
+      <div class="card">
+        <div class="card-header">
+          <a class="card-link" data-toggle="collapse" href="#collapseOne">
+            Collapsible Group Item #1
           </a>
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">활성화링크</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link1</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Link2(드롭다운)</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-          </li>
-          <li class="nav-item dropdown-toggle">
-            <a class="nav-link disabled" data-toggle="dropdown" href="#">Disabled</a>
-          </li>
-          
-
-          
-          
-        </ul>
-      </nav>
-
-    <div class="container">
-
-        <h2>아코디언 구현하기</h2>
-        <div id="accordion">
-
-            <div class="card">
-              <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                  Collapsible Group Item #1
-                </a>
-              </div>
-              <div id="collapseOne" class="collapse show" data-parent="#accordion">
-                <div class="card-body">
-                    그들의 불러 수 풀밭에 꽃 보이는 천지는 곳이 아름다우냐? 위하여 힘차게 생명을 힘있다. 
-                    <br>
-                    불어 아니한 가장 그들의 소금이라 새가 위하여 힘차게 봄바람이다. 
-                    <br>
-                    석가는 우리 과실이 살 눈이 하는 봄바람이다. 곧 미인을 있는 가치를 같으며, 밝은 품에 현저하게 것이다. 
-                    <br>
-                    얼마나 그와 많이 끓는다. 일월과 산야에 이상이 가지에 봄바람이다. 새가 얼음 얼마나 곧 힘차게 있으랴? 
-                    <br>
-                    대중을 놀이 때에, 바이며, 뜨거운지라, 찬미를 인류의 천하를 힘있다.
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                  Collapsible Group Item #2
-                </a>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
-          
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                  Collapsible Group Item #3
-                </a>
-              </div>
-              <div id="collapseThree" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                  Lorem ipsum..
-                </div>
-              </div>
-            </div>
-          
+        </div>
+        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+            그들을 같은 거선의 시들어 아름다우냐? 찬미를 싸인 온갖 천지는 있으랴? 위하여서, 수 거친 같은 광야에서 피가 보이는 구할 이것이다. 소리다.이것은 찬미를 생생하며, 거친 긴지라 아니한 우리
+            주는 때문이다. 두기 천하를 안고, 찾아다녀도, 그들의 전인 거친 아니더면, 사는가 사막이다. 청춘의 인도하겠다는 방지하는 하여도 아니다. 스며들어 불어 무엇을 보이는 위하여 황금시대의 있을
+            것이다. 미인을 인간의 가는 구하기 창공에 오아이스도 시들어 같은 이것이다. 위하여 있을 않는 피가 풍부하게 이성은 교향악이다.
+            <br><br>
+            너의 위하여 있는 우리는 굳세게 실로 가는 그와 소금이라 듣는다. 가슴이 인도하겠다는 얼음과 얼마나 과실이 두손을 교향악이다. 풍부하게 하여도 인간의 것은 관현악이며, 것이다. 얼마나 미인을
+            눈에 돋고, 구하지 위하여 현저하게 수 운다. 동력은 이상을 전인 내는 아니한 주는 힘있다. 있을 밝은 천고에 봄날의 오직 위하여 있는 철환하였는가? 곳이 가는 같은 아름답고 있는가? 설레는
+            그것을 피어나는 때에, 품으며, 청춘을 사막이다. 청춘의 물방아 든 인간에 충분히 노년에게서 사막이다.
+            <br><br>
+            이것을 무엇이 타오르고 사랑의 같이 그들은 있으랴? 뼈 우리는 그들의 불어 얼음에 부패뿐이다. 열락의 곧 예가 가진 용감하고 아름다우냐? 피어나기 있는 이성은 품에 싸인 두기 밥을 바이며,
+            것이다. 인간의 새 것은 밥을 가는 것이다.보라, 것이다. 지혜는 작고 끝까지 살 일월과 예수는 피고, 커다란 사막이다. 놀이 장식하는 수 듣는다. 남는 우리 그림자는 소금이라 곳이 길지 같지
+            이상을 교향악이다. 불러 위하여, 인간이 동력은 어디 피어나기 희망의 사막이다.
           </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+            Collapsible Group Item #2
+          </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            어머니, 별을 하나 하나에 많은 사람들의 이름자를 별에도 계십니다. 소학교 불러 벌레는 봅니다.
+            <br><br>
+            헤일 아무 이웃 마디씩 계집애들의 있습니다. 밤이 북간도에 아름다운 하나에 이네들은 차 벌레는 까닭입니다. 별이 이네들은 이름과, 쉬이 어머님, 이름과, 있습니다.
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+            Collapsible Group Item #3
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            겨울이 가난한 잔디가 강아지, 마디씩 계절이 어머니, 하나에 우는 까닭입니다. 없이 그러나 밤이 당신은 이름과, 무엇인지 지나가는 버리었습니다.
+            <br><br>
+            동경과 하나에 보고, 언덕 이름과, 계절이 않은 어머니, 마리아 계십니다. 헤일 이국 이름을 소학교 보고, 애기 라이너 잠, 이름과, 듯합니다. 그러나 별이 당신은 어머니, 보고, 때 멀리
+            있습니다. 가을로 이국 언덕 쓸쓸함과 듯합니다.
+          </div>
+        </div>
+      </div>
+
     </div>
+
+  </div>
 </body>
+
 </html>

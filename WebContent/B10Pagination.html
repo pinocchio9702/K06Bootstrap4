@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B10Pagination.html</title>
-    <link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <!-- Bootstrap의 Grid시스템을 활용하여 페이지 레이아웃을 구성 -->
@@ -34,7 +32,7 @@
                     <!-- 들롭다운 메뉴 추가 -->
                     <li class="list-group-item dropdown-toggle" data-toggle="dropdown" style="cursor: pointer;">
                         멀티게시판
-                          <div class="dropdown-menu ">
+                        <div class="dropdown-menu ">
                             <div class="dropdown-header">회원제게시판</div>
                             <a class="dropdown-item" href="#">Q&A</a>
                             <a class="dropdown-item" href="#">GusetBook</a>
@@ -43,91 +41,97 @@
                             <div class="dropdown-header">비회원제게시판</div>
                             <a class="dropdown-item" href="#">맛집탐방</a>
                             <a class="dropdown-item" href="#">스포트톡</a>
-                          </div>
-                          <li class="list-group-item"><a href="#">FAQ</a></li>
+                        </div>
+                    <li class="list-group-item"><a href="#">FAQ</a></li>
                     </li>
-                  </ul>
+                </ul>
             </div>
             <div class="col-9">
                 <!-- 컨텐츠 영역 -->
                 <h2>게시판 리스트에 Page적용하기</h2>
                 <!-- 게시판리스트부분 -->
-                        <table class="table table-bordered table-hover table-striped">
-                            <colgroup>
-                                <col width="60px"/>
-                                <col width="*"/>
-                                <col width="120px"/>
-                                <col width="120px"/>
-                                <col width="80px"/>
-                                <col width="60px"/>
-                            </colgroup>				
-                            <thead>
-                            <tr style="background-color: rgb(133, 133, 133); " class="text-center text-white">
-                                <th>번호</th>
-                                <th>제목</th>
-                                <th>작성자</th>
-                                <th>작성일</th>
-                                <th>조회수</th>
-                                <th>첨부</th>
-                            </tr>
-                            </thead>				
-                            <tbody>
-                            <!-- <%for(int i=1 ; i<=5 ; i++){ %> -->
-                            <!-- 리스트반복 -->
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">번호</td>
-                                <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
-                                <td class="text-center">작성자</td>
-                                <td class="text-center">작성일</td>
-                                <td class="text-center">조회수</td>
-                                <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i></td>
-                            </tr>
-                             
-                            <!-- <% } %> -->
-                        </tbody>
-                    </table>
-                    
-                    
+                <table class="table table-bordered table-hover table-striped">
+                    <colgroup>
+                        <col width="60px" />
+                        <col width="*" />
+                        <col width="120px" />
+                        <col width="120px" />
+                        <col width="80px" />
+                        <col width="60px" />
+                    </colgroup>
+                    <thead>
+                        <tr style="background-color: rgb(133, 133, 133); " class="text-center text-white">
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                            <th>첨부</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <%for(int i=1 ; i<=5 ; i++){ %> -->
+                        <!-- 리스트반복 -->
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">번호</td>
+                            <td class="text-left"><a href="ViewSkin.jsp">제목</a></td>
+                            <td class="text-center">작성자</td>
+                            <td class="text-center">작성일</td>
+                            <td class="text-center">조회수</td>
+                            <td class="text-center"><i class="material-icons" style="font-size:20px">attach_file</i>
+                            </td>
+                        </tr>
+
+                        <!-- <% } %> -->
+                    </tbody>
+                </table>
+
+
                 <!-- 페이지 번호 삽입 -->
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
@@ -135,11 +139,12 @@
                     <li class="page-item active "><a class="page-link" href="#page=2">2</a></li>
                     <li class="page-item"><a class="page-link" href="#page=3">3</a></li>
                     <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
+                </ul>
             </div>
         </div>
 
 
     </div>
 </body>
+
 </html>
